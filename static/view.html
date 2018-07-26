@@ -1,0 +1,76 @@
+<!--<!DOCTYPE html>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video</title>
+</head>
+
+<script src="static/dash.all.min.js"></script>
+
+<style>
+    video {
+       width: 640px;
+       height: 360px;
+    }
+
+</style>
+
+<body>
+<img src="static/logo.jpg">
+<!--<div>-->
+    <!--<video data-dashjs-player autoplay src="static/manifest.mpd"-->
+           <!--controls></video>-->
+<!--</div>-->
+<div>
+    <video id="videoPlayer" controls></video>
+</div>
+<script src="static/dash.all.min.js"></script>
+<!--<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>-->
+<script>
+            (function(){
+                var url = "static/manifest.mpd";
+                var player = dashjs.MediaPlayer().create();
+                player.initialize(document.querySelector("#videoPlayer"), url, true);
+            })();
+
+</script>
+</body>
+
+</html>
+
+<!--<html>-->
+
+<!--<script src="dash.all.min.js"></script>-->
+
+<!--<script>-->
+
+    <!--function startVideo(mpd) {-->
+
+      <!--var video, context, player;-->
+
+      <!--video = document.querySelector('video');-->
+
+      <!--context = new Webm.di.WebmContext();-->
+
+      <!--player = new MediaPlayer(context);-->
+
+      <!--player.startup();-->
+
+      <!--player.attachView(video);-->
+
+      <!--player.setAutoPlay(false);-->
+
+      <!--player.attachSource(mpd);-->
+
+    <!--}-->
+
+
+<!--</script>-->
+
+<!--<body onload="startVideo('manifest.mpd');">-->
+
+<!--<video controls></video>-->
+
+<!--</body>-->
+
+<!--</html>-->
