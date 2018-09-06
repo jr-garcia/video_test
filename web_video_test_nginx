@@ -1,0 +1,23 @@
+server {
+    listen      80;
+    server_name localhost; # server_name localhost webm_video_test.local;
+    charset     utf-8;
+    client_max_body_size 75M;
+
+    location /static {
+        root /home/jrg/Documentos/python/webm_video_test;
+    }
+
+    location / { try_files $uri @yourapplication; }
+    location @yourapplication {
+        include uwsgi_params;
+        uwsgi_pass unix:/home/jrg/Documentos/python/webm_video_test/uwsgi.sock;
+    }
+
+  default_type application/octet-stream;
+              types {
+                  application/dash+xml mpd;
+                  application/vnd.apple.mpegurl m3u8;
+                  video/mp2t ts;
+              }
+}

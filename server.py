@@ -6,7 +6,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello World!"
+    body = '''
+    <center>
+    <h1>Hello
+    <a href = 'view'> VIEW VIDEO</a>                
+    </h1>
+    </center>
+    '''
+    return body
 
 
 @app.route("/view")
@@ -15,3 +22,7 @@ def video():
     #     code = source.read()
     # return code
     return app.send_static_file('view.html')
+
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')

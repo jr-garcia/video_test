@@ -17,23 +17,17 @@
 
 <body>
 <img src="static/logo.jpg">
-<!--<div>-->
-    <!--<video data-dashjs-player autoplay src="static/manifest.mpd"-->
-           <!--controls></video>-->
-<!--</div>-->
 <div>
-    <video id="videoPlayer" controls></video>
+    <video data-dashjs-player autoplay src="static/manifest.mpd"
+           controls></video>
 </div>
-<script src="static/dash.all.min.js"></script>
-<!--<script src="https://cdn.dashjs.org/latest/dash.all.min.js"></script>-->
-<script>
-            (function(){
-                var url = "static/manifest.mpd";
-                var player = dashjs.MediaPlayer().create();
-                player.initialize(document.querySelector("#videoPlayer"), url, true);
-            })();
+<!--<video>-->
+  <!--<source src="static/my_video_manifest.mpd">-->
+  <!--<source src="static/my_video-50kbps.webm">-->
+  <!--Your browser does not support the video tag.-->
+<!--</video>-->
 
-</script>
+
 </body>
 
 </html>
