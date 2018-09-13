@@ -12,6 +12,8 @@ def hello():
     <a href = 'view'> VIEW VIDEO</a>                
     </h1>
     </center>
+    
+    <a href='https://github.com/jr-garcia/video_test'>https://github.com/jr-garcia/video_test.git</a>
     '''
     return body
 
