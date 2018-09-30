@@ -10,31 +10,31 @@
   <Period id="0" start="PT0S" duration="PT4.99S" >
     <AdaptationSet id="0" mimeType="video/webm" codecs="vp8" lang="eng" subsegmentAlignment="true" subsegmentStartsWithSAP="1" bitstreamSwitching="true">
       <Representation id="0" bandwidth="203669" width="160" height="90">
-        <BaseURL>https://www.dropbox.com/s/beihc8rqlm1fbvp/video_160x90_250k.webm?dl=0</BaseURL>
+        <BaseURL>files/video_160x90_250k.webm</BaseURL>
         <SegmentBase indexRange="158413-158430">
           <Initialization range="0-250" />
         </SegmentBase>
       </Representation>
       <Representation id="1" bandwidth="409164" width="320" height="180">
-        <BaseURL>https://www.dropbox.com/s/lfnbbxetwx8ppym/video_320x180_500k.webm?dl=0</BaseURL>
+        <BaseURL>files/video_320x180_500k.webm</BaseURL>
         <SegmentBase indexRange="317994-318011">
           <Initialization range="0-251" />
         </SegmentBase>
       </Representation>
       <Representation id="2" bandwidth="603246" width="640" height="360">
-        <BaseURL>https://www.dropbox.com/s/x2hd30bif743x85/video_640x360_750k.webm?dl=0</BaseURL>
+        <BaseURL>files/video_640x360_750k.webm</BaseURL>
         <SegmentBase indexRange="468713-468730">
           <Initialization range="0-252" />
         </SegmentBase>
       </Representation>
       <Representation id="3" bandwidth="809211" width="640" height="360">
-        <BaseURL>https://www.dropbox.com/s/wmx349uj6aj0er6/video_640x360_1000k.webm?dl=0</BaseURL>
+        <BaseURL>files/video_640x360_1000k.webm</BaseURL>
         <SegmentBase indexRange="628658-628675">
           <Initialization range="0-252" />
         </SegmentBase>
       </Representation>
       <Representation id="4" bandwidth="1211781" width="1280" height="720">
-        <BaseURL>https://www.dropbox.com/s/f66zzani7232845/video_1280x720_1500k.webm?dl=0</BaseURL>
+        <BaseURL>files/video_1280x720_1500k.webm</BaseURL>
         <SegmentBase indexRange="941280-941297">
           <Initialization range="0-252" />
         </SegmentBase>
@@ -42,7 +42,7 @@
     </AdaptationSet>
     <AdaptationSet id="1" mimeType="audio/webm" codecs="vorbis" lang="eng" audioSamplingRate="44100" subsegmentStartsWithSAP="1">
       <Representation id="6" bandwidth="99692">
-        <BaseURL>https://www.dropbox.com/s/7ed8ztgtzb5trxv/audio_128k.webm?dl=0</BaseURL>
+        <BaseURL>files/audio_128k.webm</BaseURL>
         <SegmentBase indexRange="81482-81531">
           <Initialization range="0-4533" />
         </SegmentBase>

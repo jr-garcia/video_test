@@ -4,14 +4,21 @@ server {
     charset     utf-8;
     client_max_body_size 75M;
 
+    add_header Access-Control-Allow-Origin *; # < this is the needed header
+    #add_header 'Access-Control-Allow-Origin' *;
+
     location /static {
         root /home/jrg/Documentos/python/webm_video_test;
+
     }
 
-    location / { try_files $uri @yourapplication; }
+    location / {
+     try_files $uri @yourapplication;
+     }
+
     location @yourapplication {
         include uwsgi_params;
-        uwsgi_pass unix:/home/jrg/Documentos/python/webm_video_test/uwsgi.sock;
+        uwsgi_pass unix:/tmp/nginx.socket;
     }
 
   default_type application/octet-stream;
