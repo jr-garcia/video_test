@@ -64,7 +64,6 @@ def hello():
 
 
 @app.route("/view", methods=['GET', 'OPTIONS'])
-@crossdomain(origin='*')
 def video():
     # with open('view.html') as source:
     #     code = source.read()
